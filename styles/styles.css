@@ -37,21 +37,41 @@ h1{
 }
 .info{
     display: flex;
-    flex-direction: row;
-    
+    gap: 30px;
+    align-items: flex-start;
+}
+.info > div {
+    display: flex;
+    flex-direction: column;
+}
+.info img{
+    height: auto;
+    object-fit: cover;
+}
+.title-onas{
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0 0 10px 0;
 }
 h3{
     margin: 20px; 
-    font-size: 22px;
+    font-size: 26px;
 }
-
+.info h3,
+.info p{
+     margin: 10px 0;
+}
 .info > p{
     text-align: justify;
     margin: 0 100px 0 100px;
+   
+}
+.info-text > p{
+    font-size: 25px;
 }
 .service{
     margin:20px;
-    font-size:18px;
+    font-size:25px;
 }
 .service > ul {
     color:#333;
@@ -78,7 +98,7 @@ header{
     padding:10px 2px;
 }
 nav > a{
-    margin:4px;
+    margin:20px;
     color:rgb(255, 255, 255);
     text-decoration:none;
 }
@@ -90,6 +110,13 @@ nav > a:hover{
     font-size: 40px;
     margin: 20px;
     font-weight: bold;
+}
+
+.h2doc{
+    margin-left: 40px;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 0px;
 }
 
 .container {
@@ -117,6 +144,12 @@ div.doctor{
     object-fit: cover;
     border-radius: 10px;
 }
+hr{
+    border: none;
+    height: 2px;
+    background: #1E88E5;
+    margin: 20px 0;
+}
 h4{
     margin-top: 5px;
     font-weight: bold;
@@ -141,7 +174,7 @@ h5{
     margin-bottom: 10px;
     background-color:#1E88E5;
     height: 34px;
-    width: 300px;
+    width: 550px;
     border-radius:10px;
     transition: 0.3s;
 }
